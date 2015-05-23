@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D06150221B107B68000FF1D8 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06150211B107B68000FF1D8 /* AppKit.framework */; };
+		D06150241B107B68000FF1D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06150231B107B68000FF1D8 /* Foundation.framework */; };
+		D06150291B107B68000FF1D8 /* JxbIconMan.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = D06150281B107B68000FF1D8 /* JxbIconMan.xcscheme */; };
+		D061502C1B107B68000FF1D8 /* JxbIconMan.m in Sources */ = {isa = PBXBuildFile; fileRef = D061502B1B107B68000FF1D8 /* JxbIconMan.m */; };
+		D061502F1B107B68000FF1D8 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D061502E1B107B68000FF1D8 /* NSObject_Extension.m */; };
+		D06150391B108875000FF1D8 /* NSImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = D06150381B108875000FF1D8 /* NSImage+Resize.m */; };
+		D061504B1B109CAF000FF1D8 /* XBMainWC.m in Sources */ = {isa = PBXBuildFile; fileRef = D06150491B109CAF000FF1D8 /* XBMainWC.m */; };
+		D061504C1B109CAF000FF1D8 /* XBMainWC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D061504A1B109CAF000FF1D8 /* XBMainWC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D061501E1B107B68000FF1D8 /* JxbIconMan.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JxbIconMan.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		D06150211B107B68000FF1D8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		D06150231B107B68000FF1D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		D06150271B107B68000FF1D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06150281B107B68000FF1D8 /* JxbIconMan.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = JxbIconMan.xcscheme; path = JxbIconMan.xcodeproj/xcshareddata/xcschemes/JxbIconMan.xcscheme; sourceTree = SOURCE_ROOT; };
+		D061502A1B107B68000FF1D8 /* JxbIconMan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JxbIconMan.h; sourceTree = "<group>"; };
+		D061502B1B107B68000FF1D8 /* JxbIconMan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JxbIconMan.m; sourceTree = "<group>"; };
+		D061502D1B107B68000FF1D8 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		D061502E1B107B68000FF1D8 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		D06150371B108875000FF1D8 /* NSImage+Resize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSImage+Resize.h"; path = "Tools/Image/NSImage+Resize.h"; sourceTree = "<group>"; };
+		D06150381B108875000FF1D8 /* NSImage+Resize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSImage+Resize.m"; path = "Tools/Image/NSImage+Resize.m"; sourceTree = "<group>"; };
+		D06150481B109CAF000FF1D8 /* XBMainWC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XBMainWC.h; sourceTree = "<group>"; };
+		D06150491B109CAF000FF1D8 /* XBMainWC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XBMainWC.m; sourceTree = "<group>"; };
+		D061504A1B109CAF000FF1D8 /* XBMainWC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XBMainWC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D061501C1B107B68000FF1D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06150221B107B68000FF1D8 /* AppKit.framework in Frameworks */,
+				D06150241B107B68000FF1D8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D06150151B107B68000FF1D8 = {
+			isa = PBXGroup;
+			children = (
+				D06150251B107B68000FF1D8 /* JxbIconMan */,
+				D06150201B107B68000FF1D8 /* Frameworks */,
+				D061501F1B107B68000FF1D8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D061501F1B107B68000FF1D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D061501E1B107B68000FF1D8 /* JxbIconMan.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D06150201B107B68000FF1D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D06150211B107B68000FF1D8 /* AppKit.framework */,
+				D06150231B107B68000FF1D8 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D06150251B107B68000FF1D8 /* JxbIconMan */ = {
+			isa = PBXGroup;
+			children = (
+				D06150471B109CAF000FF1D8 /* UI */,
+				D06150351B1087F7000FF1D8 /* Tools */,
+				D061502A1B107B68000FF1D8 /* JxbIconMan.h */,
+				D061502B1B107B68000FF1D8 /* JxbIconMan.m */,
+				D061502D1B107B68000FF1D8 /* NSObject_Extension.h */,
+				D061502E1B107B68000FF1D8 /* NSObject_Extension.m */,
+				D06150261B107B68000FF1D8 /* Supporting Files */,
+			);
+			path = JxbIconMan;
+			sourceTree = "<group>";
+		};
+		D06150261B107B68000FF1D8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D06150271B107B68000FF1D8 /* Info.plist */,
+				D06150281B107B68000FF1D8 /* JxbIconMan.xcscheme */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D06150351B1087F7000FF1D8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D061503A1B108AFA000FF1D8 /* Manager */,
+				D06150361B108836000FF1D8 /* Image */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		D06150361B108836000FF1D8 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				D06150371B108875000FF1D8 /* NSImage+Resize.h */,
+				D06150381B108875000FF1D8 /* NSImage+Resize.m */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		D061503A1B108AFA000FF1D8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		D06150471B109CAF000FF1D8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D06150481B109CAF000FF1D8 /* XBMainWC.h */,
+				D06150491B109CAF000FF1D8 /* XBMainWC.m */,
+				D061504A1B109CAF000FF1D8 /* XBMainWC.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D061501D1B107B68000FF1D8 /* JxbIconMan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06150321B107B68000FF1D8 /* Build configuration list for PBXNativeTarget "JxbIconMan" */;
+			buildPhases = (
+				D061501A1B107B68000FF1D8 /* Sources */,
+				D061501B1B107B68000FF1D8 /* Resources */,
+				D061501C1B107B68000FF1D8 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JxbIconMan;
+			productName = JxbIconMan;
+			productReference = D061501E1B107B68000FF1D8 /* JxbIconMan.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D06150161B107B68000FF1D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Peter;
+				TargetAttributes = {
+					D061501D1B107B68000FF1D8 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = D06150191B107B68000FF1D8 /* Build configuration list for PBXProject "JxbIconMan" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D06150151B107B68000FF1D8;
+			productRefGroup = D061501F1B107B68000FF1D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D061501D1B107B68000FF1D8 /* JxbIconMan */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D061501B1B107B68000FF1D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D061504C1B109CAF000FF1D8 /* XBMainWC.xib in Resources */,
+				D06150291B107B68000FF1D8 /* JxbIconMan.xcscheme in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D061501A1B107B68000FF1D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D061502C1B107B68000FF1D8 /* JxbIconMan.m in Sources */,
+				D06150391B108875000FF1D8 /* NSImage+Resize.m in Sources */,
+				D061504B1B109CAF000FF1D8 /* XBMainWC.m in Sources */,
+				D061502F1B107B68000FF1D8 /* NSObject_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D06150301B107B68000FF1D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		D06150311B107B68000FF1D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		D06150331B107B68000FF1D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = JxbIconMan/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		D06150341B107B68000FF1D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = JxbIconMan/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D06150191B107B68000FF1D8 /* Build configuration list for PBXProject "JxbIconMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06150301B107B68000FF1D8 /* Debug */,
+				D06150311B107B68000FF1D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D06150321B107B68000FF1D8 /* Build configuration list for PBXNativeTarget "JxbIconMan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06150331B107B68000FF1D8 /* Debug */,
+				D06150341B107B68000FF1D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D06150161B107B68000FF1D8 /* Project object */;
+}
