@@ -42,28 +42,60 @@
 - (IBAction)btnGenerateAction:(id)sender {
     if (txtFile.stringValue.length == 0)
     {
+        [self showAlert:@"Please choose a source image."];
         return;
     }
-    if (ckbCustom.state == 1 && (txtWidth.stringValue.length == 0 || txtHeight.stringValue.length == 1))
+    if (ckbCustom.state == 1 && (txtWidth.stringValue.length == 0 || txtHeight.stringValue.length == 0))
     {
+        [self showAlert:@"Custom size need width size and height size."];
         return;
     }
     if (ckbApp.state == 0 && ckbCustom.state == 0)
     {
+        [self showAlert:@"You must choose one, AppIcon or Custom size"];
         return;
     }
     NSString* toDir = [[[txtFile.stringValue stringByReplacingOccurrencesOfString:@"file:" withString:@""] stringByDeletingLastPathComponent] stringByAppendingPathComponent:@"JxbIconMan"];
     if (![[NSFileManager defaultManager] fileExistsAtPath:toDir isDirectory:nil])
         [[NSFileManager defaultManager] createDirectoryAtPath:toDir withIntermediateDirectories:YES attributes:nil error:nil];
-    NSImage* imgSource = [[NSImage alloc] initWithContentsOfFile:[txtFile.stringValue stringByReplacingOccurrencesOfString:@"file://" withString:@""]];
+    NSString* strFile = [[txtFile.stringValue stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"file://" withString:@""];
+    NSImage* imgSource = [[NSImage alloc] initWithContentsOfFile:strFile];
     if (ckbApp.state == 1)
     {
-        NSArray* iconArr = @[@58,@80,@87,@120,@180];
-        for(NSNumber* size in iconArr)
+        //iphone
+        NSString* toDirApp = [toDir stringByAppendingPathComponent:@"iPhone"];
+        if (![[NSFileManager defaultManager] fileExistsAtPath:toDirApp isDirectory:nil])
+            [[NSFileManager defaultManager] createDirectoryAtPath:toDirApp withIntermediateDirectories:YES attributes:nil error:nil];
+        NSArray* iconArr_iphone = @[@58,@80,@87,@120,@180];
+        for(NSNumber* size in iconArr_iphone)
         {
-            NSString* toFile = [toDir stringByAppendingPathComponent:[NSString stringWithFormat:@"AppIcon_%d.png",[size intValue]]];
+            NSString* toFile = [toDirApp stringByAppendingPathComponent:[NSString stringWithFormat:@"AppIcon_%d.png",[size intValue]]];
             [self generateIcon:imgSource size:CGSizeMake([size doubleValue] / 2, [size doubleValue] / 2) toFile:toFile];
         }
+        
+        //ipad
+        toDirApp = [toDir stringByAppendingPathComponent:@"iPad"];
+        if (![[NSFileManager defaultManager] fileExistsAtPath:toDirApp isDirectory:nil])
+            [[NSFileManager defaultManager] createDirectoryAtPath:toDirApp withIntermediateDirectories:YES attributes:nil error:nil];
+        NSArray* iconArr_ipad = @[@29,@40,@58,@76,@80,@152];
+        for(NSNumber* size in iconArr_ipad)
+        {
+            NSString* toFile = [toDirApp stringByAppendingPathComponent:[NSString stringWithFormat:@"AppIcon_%d.png",[size intValue]]];
+            [self generateIcon:imgSource size:CGSizeMake([size doubleValue] / 2, [size doubleValue] / 2) toFile:toFile];
+        }
+        
+        //iwatch
+        toDirApp = [toDir stringByAppendingPathComponent:@"iWatch"];
+        if (![[NSFileManager defaultManager] fileExistsAtPath:toDirApp isDirectory:nil])
+            [[NSFileManager defaultManager] createDirectoryAtPath:toDirApp withIntermediateDirectories:YES attributes:nil error:nil];
+        NSArray* iconArr_iWatch = @[@48,@55,@58,@87,@80,@88,@172,@196];
+        for(NSNumber* size in iconArr_iWatch)
+        {
+            NSString* toFile = [toDirApp stringByAppendingPathComponent:[NSString stringWithFormat:@"AppIcon_%d.png",[size intValue]]];
+            [self generateIcon:imgSource size:CGSizeMake([size doubleValue] / 2, [size doubleValue] / 2) toFile:toFile];
+        }
+        
+        [self showAlert:@"Done."];
     }
     if (ckbCustom.state == 1)
     {
@@ -77,6 +109,12 @@
     NSData *data = [img2 TIFFRepresentation];
     [data writeToFile:toFile atomically:YES];
 
+}
+
+- (void)showAlert:(NSString*)str {
+    NSAlert* alert = [[NSAlert alloc] init];
+    alert.messageText = str;
+    [alert runModal];
 }
 
 @end
